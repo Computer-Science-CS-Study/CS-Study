@@ -1,1 +1,1 @@
-# CS-Study
+# 메모리 (with C)
