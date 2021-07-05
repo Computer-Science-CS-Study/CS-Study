@@ -193,8 +193,7 @@ void wrong_swap(int a, int b){
 * main 함수가 swap 함수를 호출하면 해당 함수를 위한 메모리 영역이 main 위에 쌓인다 <br>
 <img src="https://user-images.githubusercontent.com/69183944/124471154-7c6a9900-ddd7-11eb-9851-715b5925b415.png" width="250" height="400"> <br>
 
-* x와 y가 바닥에 놓이고 그 위에 a와 tmp 가 쌓인다. 그리고 swap을 호출하면 a, b, tmp 이렇게 세 개의 변수가 swap 프레임 메모리에 존재한다
-* 즉, 컴퓨터가 스택에 또 다른 프레임을 위한 영역을 할당해준다 <br>
+* x와 y가 바닥에 놓이고 swap을 호출하면 a, b, tmp 이렇게 세 개의 변수가 swap 프레임 메모리에 존재한다
 <img src="https://user-images.githubusercontent.com/69183944/124471284-a754ed00-ddd7-11eb-9fd4-d882a349b8c5.png" width="250" height="400"> <br>
 
 * 함수의 마지막 줄까지 수행이 완료되면, 스택에서 swap 프레임은 사라진다.하지만 메모리가 사라지는 것은 아니다. 그냥 이 프로그램을 위해 더 이상 사용하지 않는 것이다 <br>
