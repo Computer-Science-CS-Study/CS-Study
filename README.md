@@ -196,12 +196,12 @@ void wrong_swap(int a, int b){
 * x와 y가 바닥에 놓이고 swap을 호출하면 a, b, tmp 이렇게 세 개의 변수가 swap 프레임 메모리에 존재한다
 <img src="https://user-images.githubusercontent.com/69183944/124471284-a754ed00-ddd7-11eb-9fd4-d882a349b8c5.png" width="250" height="400"> <br>
 
-* 함수의 마지막 줄까지 수행이 완료되면, 스택에서 swap 프레임은 사라진다.하지만 메모리가 사라지는 것은 아니다. 그냥 이 프로그램을 위해 더 이상 사용하지 않는 것이다 <br>
+* 함수의 마지막 줄까지 수행이 완료되면, 스택에서 swap 프레임은 사라진다. 하지만 메모리가 사라지는 것은 아니다. 그냥 이 프로그램을 위해 더 이상 사용하지 않는 것이다 <br>
 <img src="https://user-images.githubusercontent.com/69183944/124471542-f1d66980-ddd7-11eb-924b-2b08219a5a1a.png" width="250" height="400"> <br>
 <br>
 
 #### 메모리 교환 (올바른 코드)
-* swap 함수를 통해 x와 y의 값을 교환하려면, 참조를 상요한다. main에서 x와 y의 값을 swap에게 전달하지 않고 x와 y의 주소를 알려줘서 swap 함수가 그 주소로 가서 값을 바꾸게 하는 것이다<br>
+* swap 함수를 통해 x와 y의 값을 교환하려면, 참조를 사용한다. main에서 x와 y의 값을 swap에게 전달하지 않고 x와 y의 주소를 알려줘서 swap 함수가 그 주소로 가서 값을 바꾸게 하는 것이다<br>
 <img src="https://user-images.githubusercontent.com/69183944/124471829-4f6ab600-ddd8-11eb-8cdf-e9927a0392fa.png" width="250" height="400"> <br>
 ```c
 #include <stdio.h>
