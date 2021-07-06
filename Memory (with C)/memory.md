@@ -54,7 +54,7 @@ printf("%p\n", s); //0x100bddfqe
 printf("%p\n", &s); //0x7ffeef022698
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ac53eee-5040-4dc8-8beb-ffbedef99331/IMG_60BC476AA69F-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ac53eee-5040-4dc8-8beb-ffbedef99331/IMG_60BC476AA69F-1.jpeg)
+![그림1](https://user-images.githubusercontent.com/59546993/124593575-c2883100-de99-11eb-9c08-b355fda98188.jpeg)
 
 ⇒ s는 문자의 주소, \*s는 그 문자로 가는 거니까 E가 있음
 
@@ -86,7 +86,7 @@ printf("%p\n", &s); //0x7ffeef022698
   char *t = s;
   ```
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70e6d7b4-1fa8-4357-bd86-c0732791b32c/IMG_2025CA6DAE78-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70e6d7b4-1fa8-4357-bd86-c0732791b32c/IMG_2025CA6DAE78-1.jpeg)
+  ![그림2](https://user-images.githubusercontent.com/59546993/124593571-c2883100-de99-11eb-9d64-78157c1e2864.jpeg)
 
   ⇒ 결국 포인터가 복사되기 때문에 t를 바꿔도 s에도 영향이 감
 
@@ -136,11 +136,11 @@ void swap(int a, int b)
 - swap 함수 자체는 동작하지만 swap 에서 사용하는 변수 a, b 는 x, y 의 "값"을 복사한 것이기 때문에
 - 메모리 구조
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c1040bd7-baf9-41f9-bf85-5f6ed2ff2ec9/IMG_1473F719C544-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c1040bd7-baf9-41f9-bf85-5f6ed2ff2ec9/IMG_1473F719C544-1.jpeg)
+  ![그림3](https://user-images.githubusercontent.com/59546993/124593567-c1570400-de99-11eb-8289-27ea8b06764a.jpeg)
 
 - 위의 문제를 해결하려면 참조에 의한 전달을 해서 swap 함수의 변수들이 main함수의 변수들을 포인팅 하게 해야한다.
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c65a9900-603c-459f-8218-f845aabb065b/IMG_006F3B38F9E9-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c65a9900-603c-459f-8218-f845aabb065b/IMG_006F3B38F9E9-1.jpeg)
+  ![그림4](https://user-images.githubusercontent.com/59546993/124593551-bdc37d00-de99-11eb-98f5-bd1bc78618f2.jpeg)
 
   ```c
   #include <stdio.h>
